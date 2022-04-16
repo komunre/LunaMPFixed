@@ -141,12 +141,6 @@ namespace Server
                 LunaLog.Debug("Loading mod control...");
                 ModFileSystem.LoadModFile();
             }
-
-            Console.Title += $" ({GeneralSettings.SettingsStore.ServerName})";
-
-#if DEBUG
-            Console.Title += " DEBUG";
-#endif
         }
 
         /// <summary>

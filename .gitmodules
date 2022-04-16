@@ -1,0 +1,3 @@
+[submodule "LunaConfigNode"]
+	path = LunaConfigNode
+	url = https://github.com/LunaMultiplayer/LunaConfigNode.git
