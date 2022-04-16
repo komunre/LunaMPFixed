@@ -29,6 +29,7 @@
     <ProjectReference Include="..\LmpGlobal\LmpGlobal.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="CachedQuickLz" Version="1.3.1" />
     <PackageReference Include="Microsoft.DotNet.UpgradeAssistant.Extensions.Default.Analyzers" Version="0.3.310801">
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
