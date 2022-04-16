@@ -12,27 +12,27 @@ namespace LmpCommon
     {
         public static void ThreadSafeCompress(object lockObj, ref byte[] data, ref int numBytes)
         {
-            lock (lockObj)
+            /*lock (lockObj)
             {
                 if (!CachedQlz.IsCompressed(data, numBytes))
                 {
                     CachedQlz.Compress(ref data, ref numBytes);
                 }
-            }
+            }*/
         }
 
         public static void ThreadSafeDecompress(object lockObj, ref byte[] data, int length, out int numBytes)
         {
             lock (lockObj)
             {
-                if (CachedQlz.IsCompressed(data, length))
-                {
-                    CachedQlz.Decompress(ref data, out numBytes);
-                }
-                else
-                {
+                //if (CachedQlz.IsCompressed(data, length))
+                //{
+                //    CachedQlz.Decompress(ref data, out numBytes);
+                //}
+                //else
+                //{
                     numBytes = length;
-                }
+                //}
             }
         }
 
